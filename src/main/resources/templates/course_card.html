@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Course</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+</head>
+<body>
+<a th:href="@{/courses/}" class="btn btn-primary">+Add Course</a>
+<div th:each="course : ${courseList}" class="card-deck">
+  <div class="card">
+    <div class="entry-img">
+      <img th:if="${course.getBase64() == null}" src="https://image.freepik.com/free-vector/website-template-online-education-training-courses_42775-396.jpg"
+           alt="card img" class="img-fluid">
+<!--      <img th:if="${course.getBase64() != null }" th:src="'data:image/jpg;base64, '+${course.getBase64()}"-->
+<!--           alt="card-img" class="img-fluid" >-->
+      <img th:if="${course.getBase64() != null}" th:src="*{'data:image/jpg;base64, '+ ${course.getBase64()}}" style="width: 100px;height: 100px">
+    </div>
+    <div class="card-body">
+      <h5 th:text="${course.name}" class="card-title"></h5>
+      <h4 th:text="${course.price}"></h4>
+      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

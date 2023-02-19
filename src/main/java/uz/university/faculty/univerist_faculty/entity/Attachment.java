@@ -22,7 +22,12 @@ public class Attachment {
     private byte[] bytes;
 
     @ManyToOne
-    @JoinColumn(name = "title_id",nullable = false)
+    @JoinColumn(name = "title_id")
     private Title title;
 
+    public Attachment(String name, String contentType, byte[] bytes) {
+        this.fileName = name;
+        this.contentType = contentType;
+        this.bytes = bytes;
+    }
 }

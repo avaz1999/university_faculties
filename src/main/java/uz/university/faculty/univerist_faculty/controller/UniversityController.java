@@ -20,6 +20,6 @@ public class UniversityController {
     @GetMapping
     public String getAllUniversity(Model model){
         model.addAttribute("universityList",universityService.getAllUniversities());
-        return "university";
+        return "index";
     }
 }

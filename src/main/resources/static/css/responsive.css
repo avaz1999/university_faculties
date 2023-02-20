@@ -3,293 +3,501 @@
 
 /*------------------------------------------------------------------- 991px x 768px ---------------------------------------------------------------------*/
 
-@media (min-width: 1200px) and (max-width: 1342px) {
-    .text_img {
-        margin-right: 0px;
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header-search {
+        padding: 15px 0px;
     }
-    .ideas::before {
-        right: 5px;
+}
+
+
+/*------------------------------------------------------------------- 767px x 599px ---------------------------------------------------------------------*/
+
+@media only screen and (min-width: 599px) and (max-width: 767px) {
+    .logo {
+        text-align: center;
     }
-    .map {
-        padding-right: 74px;
+    .cart-content-right {
+        padding-bottom: 5px;
+    }
+    .mg {
+        margin: 0px 0px;
+    }
+    .menu-area-main {
+        height: 256px;
+        overflow-y: auto;
+    }
+    .megamenu>.row [class*="col-"] {
+        padding: 0px;
+    }
+    .menu-area-main .megamenu .men-cat {
+        padding: 0px 15px;
+    }
+    .menu-area-main .megamenu .women-cat {
+        padding: 0px 15px;
+    }
+    .menu-area-main .megamenu .el-cat {
+        padding: 0px 15px;
+    }
+    .mean-container .mean-nav ul li a.mean-expand {
+        height: 19px;
+    }
+    .category-box.women-box {
+        display: none;
+    }
+    .cart-box {
+        display: inline-block;
+        margin: 0px 30px;
+    }
+    .wish-box {
+        float: none;
+        margin: 0px 30px;
+        display: inline-block;
+    }
+    .menu-add {
+        display: none;
+    }
+    .category-box {
+        display: none;
+    }
+    .mean-container .mean-nav ul li ol {
+        padding: 0px;
+    }
+    .mean-container .mean-nav ul li a {
+        padding: 10px 20px;
+        width: 94.8%;
+    }
+    .mean-container .mean-nav ul li li a {
+        width: 92%;
+        padding: 1em 4%;
+    }
+    .mean-container .mean-nav ul li li li a {
+        width: 100%;
+    }
+    .header-search {
+        padding: 15px 0px;
+    }
+    #collapseFilter.d-md-block {
+        padding: 30px 0px;
+    }
+}
+
+
+/*------------------------------------------------------------------- 599px x 280px ---------------------------------------------------------------------*/
+
+@media only screen and (min-width: 280px) and (max-width: 599px) {
+    .cart-content-right {
+        padding-bottom: 5px;
+    }
+    .megamenu>.row [class*="col-"] {
+        padding: 0px;
+    }
+    .menu-area-main .megamenu .men-cat {
+        padding: 0px 15px;
+    }
+    .menu-area-main .megamenu .women-cat {
+        padding: 0px 15px;
+    }
+    .menu-area-main .megamenu .el-cat {
+        padding: 0px 15px;
+    }
+    .mean-container .mean-nav ul li a {
+        padding: 1em 4%;
+        width: 92%;
+    }
+    .mean-container .mean-nav ul li li a {
+        width: 90%;
+        padding: 1em 5%;
+    }
+    .mean-container .sub-full.megamenu-categories ol li a {
+        padding: 5px 0px;
+        text-transform: capitalize;
+        width: 100%;
+    }
+    .megamenu .sub-full.megamenu-categories .women-box .banner-up-text a {
+        width: auto;
+        border: none;
+        float: none;
+    }
+    .menu-area-main {
+        height: 45px;
+        overflow-y: auto;
+    }
+    .mean-container .mean-nav ul li a.mean-expand {
+        top: 0;
     }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    .text_img {
-        margin-right: 0px;
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding: 0px 12px;
     }
-    .titlepage h2 {
-        font-size: 37px;
-        line-height: 47px;
+    .search_icon {
+        text-align: left;
+        width: 40px;
     }
-    .ideas::before {
-        right: 5px;
+    .mail_box {
+        padding: 0px 20px 0px 10px;
     }
-    .bottom_form h3 {
-        margin-right: 42px;
+    .alteration_text {
+        margin: 5px;
     }
-    .about_us li {
-        font-size: 16px;
+    .give_taital {
+        padding-top: 30px;
     }
-    .map {
-        padding-right: 90px;
+    .ipsum_text {
+        padding-top: 0px;
+    }
+    .img_7 {
+        height: 295px;
+    }
+    .donate_right {
+        width: 73%;
+        float: right;
+    }
+    #main_slider a.carousel-control-prev {
+        right: 70px;
+        top: 92%;
+    }
+    #main_slider a.carousel-control-next {
+        right: -10px;
+        top: 92%;
+    }
+    .footer_text {
+        font-size: 14px;
+    }
+    .footer_menu li {
+        font-size: 14px;
+    }
+    .address_text {
+        width: 86%;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .navigation.navbar-dark .navbar-nav .nav-link {
-        padding: 0px 18px;
-    }
-    .text-bg h1 {
-        font-size: 43px;
-        line-height: 53px;
-        padding-bottom: 10px;
-    }
-    .text_img {
-        margin-right: 0px;
-    }
-    .titlepage h2 {
-        font-size: 28px;
-        line-height: 37px;
-    }
-    .team .titlepage h3 {
-        font-size: 20px;
-    }
-    .team .titlepage strong {
-        font-size: 34px;
-        padding-left: 12px;
-    }
-    .services .services_box h3 {
-        font-size: 20px;
-    }
-    .ideas::before {
-        right: 5px;
-    }
-    .ideas_box p {
-        font-size: 16px;
-    }
-    ul.social_icon {
-        margin-bottom: 25px;
-    }
-    .d_none {
+    .search_icon {
         display: none;
     }
-    .about_us li {
-        float: left;
+    button.donate_btn {
+        display: none;
     }
-    .map {
-        padding-right: 74px;
+    .navbar-brand {
+        margin-right: 0px;
+        width: 100%;
     }
-    .bottom_form h3 {
-        margin-right: 19px;
+    .bg-light {
+        background-color: #fff !important;
     }
-    .bottom_form .enter {
-        width: 39%;
+    .navbar-expand-lg .navbar-nav .nav-link {
+        text-align: center;
     }
-    .sub_btn {
-        max-width: 125px;
+    .navbar-expand-lg .navbar-collapse {
+        margin-top: 0px;
     }
-    .blog .blog_box figure img {
-    height: 192px;
+    .banner_taital {
+        width: 65%;
     }
-
+    .banner_text {
+        width: 100%;
+    }
+    .donation_box {
+        width: 90%;
+    }
+    .mail_box {
+        padding: 0px 20px 10px 10px;
+    }
+    .box_main {
+        margin-bottom: 30px;
+    }
+    .about_text {
+        font-size: 14px;
+        padding: 0px 0px;
+    }
+    .alteration_text {
+        display: none;
+    }
+    .donate_bt a {
+        width: 114px;
+    }
+    .give_taital {
+        padding-top: 0px;
+    }
+    .ipsum_text {
+        font-size: 14px;
+        padding-top: 0;
+    }
+    .img_7 {
+        height: 321px;
+    }
+    .donate_right {
+        width: 70%;
+        float: right;
+    }
+    .dummy_text {
+        font-size: 14px;
+    }
+    #main_slider a.carousel-control-next {
+        display: none;
+    }
+    #main_slider a.carousel-control-prev {
+        display: none;
+    }
+    .footer_logo {
+        padding-bottom: 40px;
+    }
+    .address_text {
+        width: 90%;
+    }
+    .donate_section {
+        background-size: cover;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-    .banner_main {
-        min-height: 1065px;
-    }
-    .text_img {
-        margin-right: 0px;
-        margin-top: 30px;
-    }
-    .text_img figure h3 {
-        top: 19px;
-        left: -3px;
-    }
-    .text-bg p {
-        padding-bottom: 30px;
-    }
-    .ideas_box p {
-        margin-bottom: 30px;
-    }
-    .margin_bottom {
-        margin-bottom: 30px;
-    }
-    .map {
-        background: #02246a;
-        padding: 20px;
-        margin-top: 30px;
-    }
-    .ideas::before {
-        right: 4px;
-    }
-    .contact::before {
-        background: inherit;
-    }
-    .sub_btn {
-        max-width: 140px;
-    }
-    .bottom_form h3 {
-        margin-right: 11px;
-        margin-top: 0 !important;
-    }
-    .main_form {
-        margin: 0;
-    }
-    .footer h3 {
-        margin-top: 30px;
-    }
-    ul.location_icon li {
-        font-size: 17px;
-        padding-left: 13px;
-    }
-    .navigation.navbar {
-        float: right;
-        display: inherit !important;
-        padding: 0;
-        width: 100%;
-        padding-top: 5px !important;
-    }
-    .navigation .navbar-collapse {
-        background: #07183b;
-        padding: 20px;
-        margin-top: 64px;
-        position: absolute;
-        width: 100%;
-        margin-right: 20px;
-        z-index: 999;
-    }
-    .navigation.navbar-dark .navbar-nav .nav-link {
-        padding: 10px 0;
-    }
-    .navigation.navbar-dark .navbar-toggler {
-        border: inherit;
-        float: right;
-        padding-top: 6px;
-    }
-    .navigation.navbar-dark .navbar-toggler-icon {
-        background: url(../images/menu_icon.png);
-        background-repeat: no-repeat;
-    }
-    .d_none {
+    .search_icon {
         display: none;
     }
-    .about_page .team_img {
-        margin-top: 30px;
+    button.donate_btn {
+        display: none;
     }
-
+    .navbar-brand {
+        margin-right: 0px;
+        width: 100%;
+    }
+    .bg-light {
+        background-color: #fff !important;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        text-align: center;
+    }
+    .navbar-expand-lg .navbar-collapse {
+        margin-top: 0px;
+    }
+    .banner_taital {
+        width: 100%;
+        font-size: 40px;
+    }
+    .banner_text {
+        width: 100%;
+        font-size: 14px;
+    }
+    .banner_section {
+        height: auto;
+        top: 0;
+        margin-bottom: 0;
+    }
+    .donation_box {
+        width: 100%;
+    }
+    .mail_text {
+        width: 95%;
+    }
+    .mail_box {
+        display: grid;
+    }
+    .box_main {
+        margin-bottom: 20px;
+    }
+    .about_taital {
+        font-size: 30px;
+        padding-top: 0px;
+    }
+    .about_img {
+        padding-top: 40px;
+    }
+    .mission_taital {
+        font-size: 30px;
+        padding-left: 0px;
+    }
+    .mission_text {
+        padding-left: 0px;
+    }
+    .mission_section_2 {
+        padding-top: 0px;
+        padding: 20px 30px;
+    }
+    .image {
+        height: 400px;
+        margin-top: 20px;
+    }
+    .donate_bt a {
+        width: 115px;
+    }
+    .some_text {
+        font-size: 17px;
+    }
+    .text {
+        width: 100%;
+    }
+    .news_taital {
+        font-size: 30px;
+    }
+    .raised_text {
+        font-size: 17px;
+    }
+    .readmore_btn a {
+        width: 130px;
+    }
+    .readmore_btn_1 {
+        margin-left: 10px;
+    }
+    .give_taital_1 {
+        font-size: 18px;
+    }
+    .raised_text_1 {
+        font-size: 17px;
+    }
+    .donate_taital {
+        font-size: 28px;
+    }
+    .donate_section {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #main_slider a.carousel-control-prev {
+        display: none;
+    }
+    #main_slider a.carousel-control-next {
+        display: none;
+    }
+    .address_text {
+        width: 100%;
+        padding: 5px 100px 5px 0px;
+    }
+    .get_bt {
+        width: 34%;
+        text-align: right;
+    }
+    .donate_left {
+        width: 100%;
+    }
+    .social_icon li {
+        padding-right: 10px;
+    }
+    .footer_logo {
+        padding-bottom: 40px;
+    }
 }
 
 @media (max-width: 575px) {
-    .header {
-        padding: 30px 0px 15px 0px;
-    }
-    .logo {
-        text-align: center !important;
-        padding-bottom: 6px;
-        float: left;
-    }
-    .text_img {
-        margin-right: 0px;
-        margin-top: 30px;
-    }
-    .text-bg {
-        padding-right: 0;
-    }
-    .text_img figure h3 {
-        top: 19px;
-        left: 5px;
-    }
-    .text-bg p {
-        padding-bottom: 30px;
-    }
-    .ideas_box p {
-        margin-bottom: 30px;
-    }
-    .text-bg h1 {
-        font-size: 47px;
-        line-height: 60px;
-        padding-bottom: 10px;
-    }
-    .carousel-inner {
-        margin-right: 0;
-    }
-    .titlepage h2 {
-        font-size: 32px;
-        line-height: 40px;
-    }
-    .team .titlepage h3 {
-        font-size: 18px;
-    }
-    .team .titlepage strong {
-        font-size: 28px;
-        padding-left: 10px;
-    }
-    .map {
-        background: #02246a;
-        padding: 20px;
-        margin-top: 30px;
-    }
-    .ideas::before {
-        right: 4px;
-    }
-    .contact::before {
-        background: inherit;
-    }
-    .main_form {
-        margin: 0px;
-    }
-    .footer h3 {
-        margin-top: 10px;
-    }
-    .about_us li {
-        float: left;
-    }
-    ul.social_icon {
-        margin-bottom: 10px;
-    }
-    .bottom_form .enter {
-        width: 100%;
-    }
-    .navigation.navbar {
-        float: right;
-        display: inherit !important;
-        padding: 0;
-        width: 100%;
-        margin-top: -59px;
-    }
-    .navigation .navbar-collapse {
-        background: #07183b;
-        padding: 20px;
-        margin-top: 67px;
-        position: absolute;
-        width: 100%;
-        margin-right: 20px;
-        z-index: 999;
-    }
-    .navigation.navbar-dark .navbar-nav .nav-link {
-        padding: 10px 0;
-    }
-    .navigation.navbar-dark .navbar-toggler {
-        float: right;
-        margin-right: 2px;
-        border: inherit;
-    }
-    .testimonial_box {
-        padding: 0px 19px 40px 20px;
-    }
-    .navigation.navbar-dark .navbar-toggler-icon {
-        background: url(../images/menu_icon.png);
-        background-repeat: no-repeat;
-    }
-    .d_none {
+    .search_icon {
         display: none;
     }
-
-    .about_page .team_img {
-        margin-top: 30px;
+    button.donate_btn {
+        display: none;
+    }
+    .navbar-brand {
+        margin-right: 0px;
+        width: 100%;
+    }
+    .bg-light {
+        background-color: #fff !important;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        text-align: center;
+    }
+    .navbar-expand-lg .navbar-collapse {
+        margin-top: 0px;
+    }
+    .banner_taital {
+        width: 100%;
+        font-size: 40px;
+    }
+    .banner_text {
+        width: 100%;
+        font-size: 14px;
+    }
+    .banner_section {
+        height: auto;
+        top: 0;
+        margin-bottom: 0;
+    }
+    .donation_box {
+        width: 100%;
+    }
+    .mail_text {
+        width: 95%;
+    }
+    .mail_box {
+        display: grid;
+    }
+    .box_main {
+        margin-bottom: 20px;
+    }
+    .about_taital {
+        font-size: 30px;
+        padding-top: 0px;
+    }
+    .about_img {
+        padding-top: 40px;
+    }
+    .mission_taital {
+        font-size: 30px;
+        padding-left: 0px;
+    }
+    .mission_text {
+        padding-left: 0px;
+    }
+    .mission_section_2 {
+        padding-top: 0px;
+        padding: 20px 30px;
+    }
+    .image {
+        height: 400px;
+        margin-top: 20px;
+    }
+    .donate_bt a {
+        width: 115px;
+    }
+    .some_text {
+        font-size: 17px;
+    }
+    .text {
+        width: 100%;
+    }
+    .news_taital {
+        font-size: 30px;
+    }
+    .raised_text {
+        font-size: 17px;
+    }
+    .readmore_btn a {
+        width: 130px;
+    }
+    .readmore_btn_1 {
+        margin-left: 10px;
+    }
+    .give_taital_1 {
+        font-size: 18px;
+    }
+    .raised_text_1 {
+        font-size: 17px;
+    }
+    .donate_taital {
+        font-size: 28px;
+    }
+    .donate_section {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #main_slider a.carousel-control-prev {
+        display: none;
+    }
+    #main_slider a.carousel-control-next {
+        display: none;
+    }
+    .address_text {
+        width: 100%;
+        padding: 5px 100px 5px 0px;
+    }
+    .get_bt {
+        width: 34%;
+        text-align: right;
+    }
+    .donate_left {
+        width: 100%;
+    }
+    .fundraise_section_main {
+        width: 90%;
     }
 }
 

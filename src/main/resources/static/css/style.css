@@ -296,6 +296,14 @@ button.donate_btn {
 
 /* banner section start */
 
+.logo{
+    width: 150px;
+    height: 150px;
+}
+.author_photo{
+    width: 180px;
+    height: 150px;
+}
 .banner_section {
     width: 100%;
     float: left;

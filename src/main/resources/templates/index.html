@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:border-radius="http://www.w3.org/1999/xhtml">
    <head>
       <!-- basic -->
       <meta charset="utf-8">
@@ -38,7 +38,7 @@
          
       </div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand"/><a th:href="@{/index.html}"><img th:src="@{/images/logo.png}"></a>
+            <a class="navbar-brand"/><a th:href="@{/index.html}"><img class="logo" th:src="@{/images/logo.png}"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -72,90 +72,93 @@
 
       <!-- header section end -->
       <!-- banner section start -->
-      <div class="banner_section layout_padding">
-         <div class="container">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-               <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-               </ol>
-               <div class="carousel-inner">
-                  <div class="carousel-item active">
-                     <div class="row">
-                        <div class="col-sm-12">
-                           <h1 class="banner_taital">Help Poor Child</h1>
-                           <p class="banner_text">Suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going </p>
-                           <div class="read_bt"><a href="#">Read More</a></div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="carousel-item">
-                     <div class="col-sm-12">
-                        <h1 class="banner_taital">Help Poor Child</h1>
-                        <p class="banner_text">Suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going </p>
-                        <div class="read_bt"><a href="#">Read More</a></div>
-                     </div>
-                  </div>
-                  <div class="carousel-item">
-                     <div class="col-sm-12">
-                        <h1 class="banner_taital">Help Poor Child</h1>
-                        <p class="banner_text">Suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going </p>
-                        <div class="read_bt"><a href="#">Read More</a></div>
-                     </div>
-                  </div>
-                  <div class="carousel-item">
-                     <div class="col-sm-12">
-                        <h1 class="banner_taital">Help Poor Child</h1>
-                        <p class="banner_text">Suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going </p>
-                        <div class="read_bt"><a href="#">Read More</a></div>
-                     </div>
-                  </div>
-                  <div class="carousel-item">
-                     <div class="col-sm-12">
-                        <h1 class="banner_taital">Help Poor Child</h1>
-                        <p class="banner_text">Suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going </p>
-                        <div class="read_bt"><a href="#">Read More</a></div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="donation_box">
-            <h4 class="donation_taital">Contact For Donation</h4>
-            <div class="mail_box">
-               <input type="" class="mail_text" placeholder="Your Name" name="Your Name">
-               <input type="" class="mail_text" placeholder="Email" name="Email">
-               <input type="" class="mail_text" placeholder="Phone" name="Phone">
-            </div>
-            <div class="send_bt"><a href="#">Send</a></div>
-         </div>
+
+
+<!--      <div class="banner_section layout_padding">-->
+<!--         <div class="container">-->
+<!--            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">-->
+<!--               <ol class="carousel-indicators">-->
+<!--                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>-->
+<!--                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>-->
+<!--                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>-->
+<!--                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>-->
+<!--                  <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>-->
+<!--               </ol>-->
+<!--               <div class="carousel-inner">-->
+
+<!--                  <div class="carousel-item active">-->
+<!--                     <div class="row">-->
+<!--                        <div class="col-sm-12">-->
+<!--                           <h1 class="banner_taital">Help Poor Child</h1>-->
+<!--                           <p class="banner_text">Suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going </p>-->
+<!--                           <div class="read_bt"><a href="#">Read More</a></div>-->
+<!--                        </div>-->
+<!--                     </div>-->
+<!--                  </div>-->
+
+<!--                  <div class="carousel-item">-->
+<!--                     <div class="col-sm-12">-->
+<!--                        <h1 class="banner_taital">Help Poor Child</h1>-->
+<!--                        <p class="banner_text">Suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going </p>-->
+<!--                        <div class="read_bt"><a href="#">Read More</a></div>-->
+<!--                     </div>-->
+<!--                  </div>-->
+
+<!--                  <div class="carousel-item">-->
+<!--                     <div class="col-sm-12">-->
+<!--                        <h1 class="banner_taital">Help Poor Child</h1>-->
+<!--                        <p class="banner_text">Suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going </p>-->
+<!--                        <div class="read_bt"><a href="#">Read More</a></div>-->
+<!--                     </div>-->
+<!--                  </div>-->
+
+<!--                  <div class="carousel-item">-->
+<!--                     <div class="col-sm-12">-->
+<!--                        <h1 class="banner_taital">Help Poor Child</h1>-->
+<!--                        <p class="banner_text">Suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going </p>-->
+<!--                        <div class="read_bt"><a href="#">Read More</a></div>-->
+<!--                     </div>-->
+<!--                  </div>-->
+
+<!--                  <div class="carousel-item">-->
+<!--                     <div class="col-sm-12">-->
+<!--                        <h1 class="banner_taital">Help Poor Child</h1>-->
+<!--                        <p class="banner_text">Suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going </p>-->
+<!--                        <div class="read_bt"><a href="#">Read More</a></div>-->
+<!--                     </div>-->
+<!--                  </div>-->
+<!--               </div>-->
+
+<!--            </div>-->
+<!--         </div>-->
+
+
+<!--         <div class="donation_box">-->
+<!--            <h4 class="donation_taital">Contact For Donation</h4>-->
+<!--            <div class="mail_box">-->
+<!--               <input type="" class="mail_text" placeholder="Your Name" name="Your Name">-->
+<!--               <input type="" class="mail_text" placeholder="Email" name="Email">-->
+<!--               <input type="" class="mail_text" placeholder="Phone" name="Phone">-->
+<!--            </div>-->
+<!--            <div class="send_bt"><a href="#">Send</a></div>-->
+<!--         </div>-->
          <div class="fundraise_section">
             <div class="fundraise_section_main">
                <div class="row">
                   <div class="col-lg-4">
                      <div class="box_main">
-                        <div class="icon_1"><img th:src="@{/images/icon-1.png}"></div>
-                        <h4 class="volunteer_text">VOLUNTEERS</h4>
-                        <p class="lorem_text">Lorem Ipsum generators on the Internet tend to repeat predefined</p>
+                        <div class="icon_1"><img th:src="@{/images/neft_and_gas.png}"></div>
+                        <h4 class="volunteer_text">NEFT VA GAZ KONLARI GEOLOGIYASI</h4>
+                        <p class="lorem_text">Davlat Neft vaz Gaz konlarini ochish </p>
                         <div class="join_bt"><a href="#">Join Now</a></div>
                      </div>
                   </div>
-                  <div class="col-lg-4">
-                     <div class="box_main active">
-                        <div class="icon_1"><img th:src="@{/images/icon-2.png}"></div>
-                        <h4 class="volunteer_text">FUNDRAISE</h4>
-                        <p class="lorem_text">Lorem Ipsum generators on the Internet tend to repeat predefined</p>
-                        <div class="join_bt"><a href="#">Join Now</a></div>
-                     </div>
-                  </div>
+
                   <div class="col-lg-4">
                      <div class="box_main">
-                        <div class="icon_1"><img th:src="@{/images/icon-3.png}"></div>
-                        <h4 class="volunteer_text">DONATION</h4>
-                        <p class="lorem_text">Lorem Ipsum generators on the Internet tend to repeat predefined</p>
+                        <div class="icon_1"><img th:src="@{/images/gold.png}"></div>
+                        <h4 class="volunteer_text">FOYDALI QAZILMA KONLARI GEOLOGIYASI</h4>
+                        <p class="lorem_text">Davlat Foydali qazilma konlarini ochish</p>
                         <div class="join_bt"><a href="#">Join Now</a></div>
                      </div>
                   </div>
@@ -170,7 +173,7 @@
          <div class="container">
             <div class="row">
                <div class="col-sm-8">
-                  <h2 class="about_taital">about Chrity</h2>
+                  <h2 class="about_taital">Biz Haqimizda</h2>
                   <p class="about_text">many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If youmany variations of passages of Lorem Ipsum 
                      available, but the majority have suffered 
                      alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you many
@@ -179,7 +182,7 @@
                   <div class="readmore_bt"><a href="#">Read more</a></div>
                </div>
                <div class="col-sm-4">
-                  <div class="about_img"><img th:src="@{/images/about-img.png}"></div>
+                  <div class="about_img"><img th:src="@{/images/amalyot1.png}"></div>
                </div>
             </div>
          </div>
@@ -200,7 +203,7 @@
                <div class="offset-md-2"></div>
                <div class="col-md-5">
                   <div class="container_main">
-                     <img src="../static/images/img-1.png" alt="Avatar" class="image">
+                     <img th:src="@{/images/amalyot2.png}" alt="Avatar" class="image">
                      <div class="overlay">
                         <div class="text">
                            <h4 class="some_text">whichalteration in some </h4>
@@ -215,7 +218,7 @@
                </div>
                <div class="col-md-5">
                   <div class="container_main">
-                     <img th:src="@{/images/img-2.png}" alt="Avatar" class="image">
+                     <img th:src="@{/images/amalyot3.png}" alt="Avatar" class="image">
                      <div class="overlay">
                         <div class="text">
                            <h4 class="some_text">whichalteration in some </h4>
@@ -234,7 +237,7 @@
             <div class="row">
                <div class="col-md-5">
                   <div class="container_main">
-                     <img th:src="@{/images/img-3.png}" alt="Avatar" class="image">
+                     <img th:src="@{/images/amalyot5.png}" alt="Avatar" class="image">
                      <div class="overlay">
                         <div class="text">
                            <h4 class="some_text">whichalteration in some </h4>
@@ -249,7 +252,7 @@
                </div>
                <div class="col-md-5">
                   <div class="container_main">
-                     <img th:src="@{/images/img-4.png}" alt="Avatar" class="image">
+                     <img th:src="@{/images/amalyot6.png}" alt="Avatar" class="image">
                      <div class="overlay">
                         <div class="text">
                            <h4 class="some_text">whichalteration in some </h4>
@@ -270,7 +273,7 @@
                <div class="offset-md-2"></div>
                <div class="col-md-5">
                   <div class="container_main">
-                     <img th:src="@{/images/img-5.png}" alt="Avatar" class="image">
+                     <img th:src="@{/images/amalyot7.png}" alt="Avatar" class="image">
                      <div class="overlay">
                         <div class="text">
                            <h4 class="some_text">whichalteration in some </h4>
@@ -285,7 +288,7 @@
                </div>
                <div class="col-md-5">
                   <div class="container_main">
-                     <img th:src="@{/images/img-6.png}" alt="Avatar" class="image">
+                     <img th:src="@{/images/amalyot4.png}" alt="Avatar" class="image">
                      <div class="overlay">
                         <div class="text">
                            <h4 class="some_text">whichalteration in some </h4>
@@ -395,7 +398,7 @@
                   <div class="carousel-inner">
                      <div class="carousel-item active">
                         <div class="donate_left">
-                           <div class="client_img"><img th:src="@{/images/client-img.png}"></div>
+                           <div class="client_img"><img class="author_photo" th:src="@{/images/absamatov_avaz.png}"></div>
                         </div>
                         <div class="donate_right">
                            <h3 class="client_name_text">Mardo Merk</h3>
@@ -437,7 +440,7 @@
          <div class="container">
             <div class="row">
                <div class="col-sm-6 col-md-6 col-lg-3">
-                  <div class="footer_logo"><img th:src="@{/images/footer-logo.png}"></div>
+                  <div class="footer_logo"><img class="logo" th:src="@{/images/logo.png}"></div>
                </div>
                <div class="col-sm-6 col-md-6 col-lg-3">
                   <h4 class="footer_taital">NAVIGATION</h4>

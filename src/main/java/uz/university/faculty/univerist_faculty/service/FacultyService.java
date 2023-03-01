@@ -23,12 +23,14 @@ public class FacultyService {
 
     private List<FacultyDto> facultyDtoFactory(List<Faculty> faculties) {
         List<FacultyDto> facultyDtoList = new ArrayList<>();
-        FacultyDto facultyDto = new FacultyDto();
         for (Faculty faculty : faculties) {
-            facultyDto.setId(faculty.getId());
-            facultyDto.setFacultyName(faculty.getName());
-        }
+            FacultyDto facultyDto = new FacultyDto(
+                    faculty.getId(),
+                    faculty.getName(),
+                    faculty.getDescription(),
+                    faculty.getBase64Encode());
         facultyDtoList.add(facultyDto);
+        }
         return facultyDtoList;
     }
 }

@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>Doni Charity</title>
+      <title>GFU</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -51,22 +51,13 @@
                      <a class="nav-link" th:href="@{about.html}">About</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" th:href="@{/donate.html}">Donate</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" th:href="@{/news.html}">News</a>
-                  </li>
-                  <li class="nav-item">
                      <a class="nav-link" th:href="@{/contact.html}">Contact Us</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" th:href="@{/mission.html}">Our Mission</a>
                   </li>
                </ul>
-               <form class="form-inline my-2 my-lg-0">
-                  <div class="search_icon"><a href="#"><img th:src="@{/images/search-icon.png}"></a></div>
-                  <button class="donate_btn" type="submit">Donate Now</button>
-               </form>
+
             </div>
                </nav>
 
@@ -145,23 +136,20 @@
          <div class="fundraise_section">
             <div class="fundraise_section_main">
                <div class="row">
-                  <div class="col-lg-4">
+
+                  <div class="col-lg-4" th:each="faculty : ${faculties}">
                      <div class="box_main">
-                        <div class="icon_1"><img th:src="@{/images/neft_and_gas.png}"></div>
-                        <h4 class="volunteer_text">NEFT VA GAZ KONLARI GEOLOGIYASI</h4>
-                        <p class="lorem_text">Davlat Neft vaz Gaz konlarini ochish </p>
-                        <div class="join_bt"><a href="#">Join Now</a></div>
+                        <div class="icon_1">
+                           <a th:href="@{'/faculty/get-by-id/'+ ${faculty.getId()}}">
+                              <img th:if="${faculty.getBase64() != null}"   th:src="'data:image/jpg;base64, '+${faculty.getBase64()}" alt="">
+                           </a>
+                           </div>
+                        <h4 class="volunteer_text" th:text="${faculty.getFacultyName()}"></h4>
+                        <p class="lorem_text" th:text="${faculty.getDescription()}"></p>
+                        <div class="join_bt"><a th:href="@{'/faculty/get-by-id/' + ${faculty.getId()}}">Ko'proq</a></div>
                      </div>
                   </div>
 
-                  <div class="col-lg-4">
-                     <div class="box_main">
-                        <div class="icon_1"><img th:src="@{/images/gold.png}"></div>
-                        <h4 class="volunteer_text">FOYDALI QAZILMA KONLARI GEOLOGIYASI</h4>
-                        <p class="lorem_text">Davlat Foydali qazilma konlarini ochish</p>
-                        <div class="join_bt"><a href="#">Join Now</a></div>
-                     </div>
-                  </div>
                </div>
             </div>
          </div>
@@ -203,7 +191,7 @@
                <div class="offset-md-2"></div>
                <div class="col-md-5">
                   <div class="container_main">
-                     <img th:src="@{/images/amalyot2.png}" alt="Avatar" class="image">
+                     <img th:src="@{/images/amalyot4.jpg}" alt="Avatar" class="image">
                      <div class="overlay">
                         <div class="text">
                            <h4 class="some_text">whichalteration in some </h4>
@@ -218,7 +206,7 @@
                </div>
                <div class="col-md-5">
                   <div class="container_main">
-                     <img th:src="@{/images/amalyot3.png}" alt="Avatar" class="image">
+                     <img th:src="@{/images/amalyot8.png}" alt="Avatar" class="image">
                      <div class="overlay">
                         <div class="text">
                            <h4 class="some_text">whichalteration in some </h4>

@@ -18,7 +18,7 @@ public class AttachmentController {
     }
 
     @PostMapping
-    public ResponseEntity<?> addAttachment(@ModelAttribute MultipartFile file){
+    public ResponseEntity<?> universitySaveAttachment(@ModelAttribute MultipartFile file){
     return ResponseEntity.ok(attachmentService.saveAttachment(file));
     }
 }

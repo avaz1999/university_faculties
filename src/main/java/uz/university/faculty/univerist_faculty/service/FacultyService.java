@@ -7,6 +7,7 @@ import uz.university.faculty.univerist_faculty.repository.FacultyRepository;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class FacultyService {
@@ -32,5 +33,10 @@ public class FacultyService {
         facultyDtoList.add(facultyDto);
         }
         return facultyDtoList;
+    }
+
+    public FacultyDto getFacultyById(Long id) {
+        Faculty faculty = facultyRepository.getFacultyById(id);
+        return new FacultyDto(faculty.getId(),faculty.getName(), faculty.getDescription(),faculty.getBase64Encode());
     }
 }

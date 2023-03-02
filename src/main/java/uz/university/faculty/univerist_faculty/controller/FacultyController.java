@@ -23,7 +23,6 @@ public class FacultyController {
     @GetMapping("/get-by-id/{id}")
     public String getFacultyById(@PathVariable Long id, Model model){
         model.addAttribute("get_faculty",facultyService.getFacultyById(id));
-        model.addAttribute("faculties",facultyService.getAllUniversityFaculties());
         return "about";
     }
 }

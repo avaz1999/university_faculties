@@ -30,4 +30,10 @@ public class Attachment {
         this.contentType = contentType;
         this.bytes = bytes;
     }
+
+//    public String getEncode(Attachment attachment){
+//        if (attachment.bytes != null) {
+//
+//        }
+//    }
 }

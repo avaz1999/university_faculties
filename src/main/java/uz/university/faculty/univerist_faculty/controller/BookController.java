@@ -3,7 +3,9 @@ package uz.university.faculty.univerist_faculty.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import uz.university.faculty.univerist_faculty.dto.BookDto;
 import uz.university.faculty.univerist_faculty.service.BookService;
 
 @Controller
@@ -18,5 +20,14 @@ public class BookController {
     public String getAllBooks(Model model){
          model.addAttribute("bookList",bookService.getAllBooks());
          return "books";
+    }
+    @GetMapping("/save-book")
+    public String addBook(){
+        return "add_book";
+    }
+    @PostMapping
+    public String addNewBook(BookDto bookDto ){
+        bookService.addNewBook(bookDto);
+        return "redirect:/books";
     }
 }

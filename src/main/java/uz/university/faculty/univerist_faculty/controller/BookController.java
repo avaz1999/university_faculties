@@ -19,10 +19,12 @@ public class BookController {
     @GetMapping
     public String getAllBooks(Model model){
          model.addAttribute("bookList",bookService.getAllBooks());
-         return "books";
+         return "view-books";
     }
-    @GetMapping("/save-book")
-    public String addBook(){
+    @GetMapping("/add-book")
+    public String addBook(Model model){
+        model.addAttribute("faculties",bookService.getFaculties());
+        model.addAttribute("languages",bookService.getAllLanguageList());
         return "add_book";
     }
     @PostMapping

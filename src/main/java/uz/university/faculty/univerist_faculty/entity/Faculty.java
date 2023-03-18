@@ -38,6 +38,9 @@ public class Faculty {
     @OneToMany(mappedBy = "faculty")
     private List<Groups> groups;
 
+    @OneToMany(mappedBy = "faculty")
+    private List<Book> facultyBooks;
+
     public  String getBase64Encode() {
         try {
             if (this.attachment != null) {

@@ -14,10 +14,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- bootstrap css -->
-    <!--    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}">-->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}">
     <!-- style css -->
-    <link rel="stylesheet" type="text/css" th:href="@{/css/book.css}">
     <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/book.css}">
     <!-- Responsive-->
     <link rel="stylesheet" th:href="@{/css/responsive.css}">
     <!-- fevicon -->
@@ -36,6 +36,7 @@
           media="screen">
 </head>
 <body>
+
 <!-- header section start -->
 <div class="header_section">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -77,19 +78,45 @@
 </div>
 <!-- header section end -->
 <!-- about section start -->
-<form class="container">
-      <div th:each="book : ${bookList}" class="card">
-          <div class="card-image">
-              <img th:if="${book.getBase64() != null}" th:src="'data:image/jpeg;base64, '+${book.getBase64()}" alt="">
-          </div>
-          <h2 th:text="${book.getName()}"></h2>
-          <h3 th:text="${book.getAuthors()}"></h3>
-          <p th:text="${book.getDescription()}">
-          </p>
-          <a th:href="'/books/download'">Download</a>
-      </div>
-</form>
 
+
+<section class="container">
+    <div th:each="book : ${bookList}" class="card1">
+        <div class="card1-image">
+            <img  th:if="${book.getBase64() != null}"
+                 th:src="'data:image/jpeg;base64, '+${book.getBase64()}" alt="">
+        </div><br>
+        <h2 th:text="${book.getName()}"></h2>
+        <h3 th:text="${book.getAuthors()}"></h3>
+<!--        <h3 th:text="${book.getRusUzb()==false ? 'Ruscha':'Uzbekcha'}"></h3>-->
+        <p th:text="${book.getDescription()}">
+        </p>
+        <div class="download_bt">
+            <a th:href="'/books/download'">Yuklab olish</a>
+        </div>
+    </div>
+</section>
+
+<!--<div class="fundraise_section">-->
+<!--    <div class="fundraise_section_main">-->
+<!--        <div class="row">-->
+<!--            <div class="col-lg-4" th:each="bokks : ${bookList}">-->
+<!--                <div class="box_main">-->
+<!--                    <div class="icon_1">-->
+<!--                        <a th:href="@{'/bokks/get-by-id/'+ ${bokks.getId()}}">-->
+<!--                            <img th:if="${bokks.getBase64() != null}"-->
+<!--                                 th:src="'data:image/jpg;base64, '+${bokks.getBase64()}" alt="">-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                    <h2 class="volunteer_text" th:text="${bokks.getName()}"></h2>-->
+<!--                    <h4 class="volunteer_text" th:text="${bokks.getAuthors()}"></h4>-->
+<!--                    <p class="lorem_text" th:text="${bokks.getDescription()}"></p>-->
+<!--                    <div class="join_bt"><a th:href="@{'/bokks/get-by-id/' + ${bokks.getId()}}">Ko'proq</a></div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 
 <!-- about section end -->
 <!-- footer section start -->

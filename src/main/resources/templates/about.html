@@ -45,12 +45,25 @@
                   <li class="nav-item active">
                      <a class="nav-link" th:href="@{'/faculty'}">Facultet azolari</a>
                   </li>
-                  <li class="nav-item">
-                     <a class="nav-link" th:href="@{/about.html}">Foydali Manbalar</a>
+                  <li class="nav-item dropdown" th:each="groups : ${groups}">
+                    <a class="nav-link dropdown-toggle" id="navbarGroups" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Guruhlar</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarGroups">
+                     <a class="dropdown-item" th:text="${groups.getName()}"></a>
+                  </div>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" th:href="@{/about.html}" id="navbarDropDownFoydaliManbalarLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Foydali Manbalar</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropDownFoydaliManbalarLink">
+                     <a class="dropdown-item" th:href="@{'/books'}">Kitoblar</a>
+                     <a class="dropdown-item" th:href="@{'/faculty'}">Maqolalar</a>
+                     <a class="dropdown-item" th:href="@{'/faculty'}">Malumotlar</a>
+                  </div>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" th:href="@{/donate.html}">Mualiflar</a>
                   </li>
+
                </ul>
             </div>
          </nav>

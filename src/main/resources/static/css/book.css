@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card1{
+    background: white;
+    width: 300px;
+    margin: 50px;
+    border-radius: 20px 20px 0 0;
+}
+.card1-image{
+    height: 150px;
+    margin-bottom: 15px;
+    background-size: cover;
+}
+.card1 h2{
+    padding: 10px;
+}
+.card1 p{
+    padding: 10px;
+}
+.download_bt{
+    width: 150px;
+    float: left;
+    margin-top: 20px;
+}
+.download_bt a {
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    color: blue;
+    background-color: transparent;
+    border: 1px solid blue;
+    padding: 8px 0px;
+    text-transform: uppercase;
+}
+.download_bt a:hover {
+    background-color: #f64646;
+}
+/*.card1 a{*/
+/*    background-color: black;*/
+/*    color: aqua;*/
+/*    padding: 15px 20px;*/
+/*    display: block;*/
+/*    text-align: center;*/
+/*    margin: 20px 50px;*/
+/*    text-decoration: none;*/
+/*}*/
+.card1:hover{
+    background-color: white;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}

@@ -20,7 +20,9 @@ public class    BookDto {
     private String description;
     private String base64;
     private Long languageId;
-    private MultipartFile file;
+    private Boolean isPhoto = false;
+    private MultipartFile bookPhoto;
+    private MultipartFile book;
 
     public BookDto(Long id, String name, String authors, String base64,String description) {
         this.id = id;
@@ -30,9 +32,9 @@ public class    BookDto {
         this.description = description;
     }
 
-    public BookDto(String name, String authors, MultipartFile file) {
+    public BookDto(String name, String authors, MultipartFile bookPhoto) {
         this.name = name;
         this.authors = authors;
-        this.file = file;
+        this.bookPhoto = bookPhoto;
     }
 }

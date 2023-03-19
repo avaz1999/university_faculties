@@ -17,6 +17,8 @@ public class Attachment {
     private String fileName;
     @Column(nullable = false)
     private String contentType;
+    @Column(nullable = false)
+    private Boolean isPhoto = false;
 
     @Column(nullable = false)
     private byte[] bytes;
@@ -25,15 +27,16 @@ public class Attachment {
     @JoinColumn(name = "title_id")
     private Title title;
 
+    public Attachment(String name, String contentType, byte[] bytes,Boolean isPhoto) {
+        this.fileName = name;
+        this.contentType = contentType;
+        this.bytes = bytes;
+        this.isPhoto = isPhoto;
+    }
+
     public Attachment(String name, String contentType, byte[] bytes) {
         this.fileName = name;
         this.contentType = contentType;
         this.bytes = bytes;
     }
-
-//    public String getEncode(Attachment attachment){
-//        if (attachment.bytes != null) {
-//
-//        }
-//    }
 }

@@ -21,26 +21,26 @@
         <form th:action="@{/books}" method="post" class="mt-5 mb-5" enctype="multipart/form-data" id="nameForm">
 
             <div class="form-group">
-                <label for="UserName">Book name </label>
+                <label for="UserName">Kitob nomini kiriting </label>
                 <input  name="name" type="text" class="form-control" id="UserName"
-                        placeholder="Enter book name">
+                        placeholder="Kitob nomi...">
             </div>
 
 
             <div class="form-group">
-                <label for="bio">Authors: </label>
+                <label for="author">Kitob Avtori: </label>
                 <textarea  name="authors" type="text" class="form-control"
-                           id="bio" placeholder="Enter book authors here"></textarea>
+                           id="author" placeholder="Kitob avtorini kiriting"></textarea>
             </div>
 
             <div class="form-group">
-                <label for="description"> Description</label>
+                <label for="description">Kitob haqida qisqacha ma'lumot</label>
                 <textarea name="description" type="text" class="form-control"
-                id="description" placeholder="Enter book description here"></textarea>
+                id="description" placeholder="Kitob haqida qisqacha ma'lumot kiriting"></textarea>
             </div>
 
             <div class="form-group">
-                <label for="facultyId"> Faculty</label>
+                <label for="facultyId">Kitob qaysi fakultetga tegishli ekanligini tanlash</label>
                 <select class="form-control" name="facultyId" id="facultyId">
                     <option disabled="disabled" selected="selected"></option>
                     <option th:each="faculty :${faculties}" th:value="${faculty.getId()}" th:text="${faculty.getName()}"></option>
@@ -49,7 +49,7 @@
 
 
             <div class="form-group select">
-                <label for="languageId">Til</label>
+                <label for="languageId">Kitob qaysi tilda</label>
                 <select class="form-select" aria-label="Default select example" name="languageId" id="languageId">
                     <option disabled="disabled" selected="selected"></option>
                     <option th:each="language : ${languages}" th:value="${language.id}" th:text="${language.name}"></option>
@@ -58,10 +58,18 @@
             </div>
 
             <div class="form-group">
-                <label for="fileUpload" >Select book image: </label>
-                <input type="file" name="file" id="fileUpload" accept="image/png, image/jpg">
+                <label for="fileUpload" >Kitobga rasmini kiriting: </label>
+                <input type="file" name="bookPhoto" id="fileUpload" accept="image/png, image/jpg">
             </div>
 
+            <div class="form-control">
+                <label for="bookUpload">Kitobni kiriting</label>
+                <input type="file" name="book" id="bookUpload" accept="file/pdf, file/docx ">
+            </div>
+            <div  class="form-check form-switch">
+                <label for="isPhoto"></label>
+                <input id="isPhoto" type="checkbox" name="isPhoto" th:checked="*{isPhoto}">
+            </div>
 
         </form>
         <div class="form-group">

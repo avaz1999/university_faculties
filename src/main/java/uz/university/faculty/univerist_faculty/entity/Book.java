@@ -25,7 +25,11 @@ public class Book {
 
     @OneToOne(cascade = CascadeType.ALL)
     @Cascade(org.hibernate.annotations.CascadeType.DELETE)
-    private Attachment attachment;
+    private Attachment bookPhoto;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @Cascade(org.hibernate.annotations.CascadeType.DELETE)
+    private Attachment book;
 
     @ManyToOne
     @JoinColumn(name = "faculty_id", nullable = false)
@@ -36,29 +40,42 @@ public class Book {
     @JoinColumn(name = "language_id",nullable = false)
     private Language language;
 
-    public Book(String name, String authors, Attachment attachment) {
+    public Book(String name, String authors, Attachment bookPhoto) {
         this.name = name;
         this.authors = authors;
-        this.attachment = attachment;
+        this.bookPhoto = bookPhoto;
 
     }
 
 
-    public Book(String name, String authors, String description, Faculty faculty,Language language,Attachment attachment) {
+    public Book(String name, String authors, String description, Faculty faculty,Language language,Attachment bookPhoto,Attachment book) {
         this.name = name;
         this.authors = authors;
         this.description = description;
         this.faculty = faculty;
         this.language =language;
-        this.attachment = attachment;
+        this.bookPhoto = bookPhoto;
+        this.book = book;
 
     }
 
     public String getBse64Encode() {
-        if (this.attachment != null) {
-            byte[] bytes = Base64.getEncoder().encode(attachment.getBytes());
+        if (this.bookPhoto != null) {
+            byte[] bytes = Base64.getEncoder().encode(bookPhoto.getBytes());
             try {
                 return new String(bytes, "UTF-8");
+            } catch (UnsupportedEncodingException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        return null;
+    }
+
+    public String getBase64EncodeForBook(){
+        if (this.book !=null){
+            byte[] bytes = Base64.getEncoder().encode(book.getBytes());
+            try {
+                return new String(bytes,"UTF-8");
             } catch (UnsupportedEncodingException e) {
                 throw new RuntimeException(e);
             }
